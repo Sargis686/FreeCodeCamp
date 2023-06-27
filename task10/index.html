@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+   if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+console.log( checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "gift"));
+console.log( checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet"));
+console.log( checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "house"));
+
+console.log( checkObj({city: "Seattle"}, "district"));
+console.log(checkObj({pet: "kitten", bed: "sleigh"}, "gift"));
+
+
+let a = 3;
+let b = 17;
+let c = 9;
+
+// Do not modify code above this line
+
+a  +=  12;
+b += 9;
+c +=10;
+
+console.log(a); // 15
+console.log(b); // 26
+console.log(c); // 19
+
+
+
+
+
+    </script>
+</body>
+
+</html>

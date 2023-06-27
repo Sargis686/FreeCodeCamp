@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        //ete  verevum es nshanakum em value variable-i ev log -el value-verevnes dnum tpuma (undefined)
+        console.log(s);
+
+        s = 12;
+        var s;
+
+        console.log(s);
+
+
+        //======================
+
+        let t = 13;
+
+        t = 13;
+        console.log(t);
+
+
+        //======================
+
+
+        var y = 1;
+
+        var call = function () {
+            var y;
+            console.log(y, 'hoora');
+            y = 1;
+            console.log(y, 'hoora');
+
+        }
+
+        call()
+
+
+
+        //======================
+
+
+        
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(i,'wq');
+        //     setTimeout(() => {
+        //         console.log(i);
+        //     }, i * 1000,'wq')
+        // }
+
+
+
+        for (let i = 0; i < 5; i++) {
+            console.log(i, 'wq');
+            (function (index) {
+                setTimeout(() => {
+                    console.log(index);
+                }, index * 1000);
+            })(i);
+        }
+
+        //======================
+
+    </script>
+
+
+</body>
+
+</html>

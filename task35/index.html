@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <script>
+
+function sequentialSizes(val) {
+  let answer = "";
+  // Only change code below this line
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Mid";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";
+      break;
+    default:
+      answer = "Out of range";
+  }
+  // Only change code above this line
+  return answer;
+}
+
+console.log(sequentialSizes(1)); // Output: "Low"
+console.log(sequentialSizes(2)); // Output: "Low"
+console.log(sequentialSizes(3)); // Output: "Low"
+console.log(sequentialSizes(4)); // Output: "Mid"
+console.log(sequentialSizes(5)); // Output: "Mid"
+console.log(sequentialSizes(6)); // Output: "Mid"
+console.log(sequentialSizes(7)); // Output: "High"
+console.log(sequentialSizes(8)); // Output: "High"
+console.log(sequentialSizes(9)); // Output: "High"
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <script>
+
+function switchOfStuff(val) {
+  let answer = "";
+
+  switch (val) {
+    case "a":
+      answer = "apple";
+      break;
+    case "b":
+      answer = "bird";
+      break;
+    case "c":
+      answer = "cat";
+      break;
+    default:
+      answer = "stuff";
+      break;
+  }
+
+  return answer;
+}
+
+console.log(switchOfStuff("a")); // Output: "apple"
+console.log(switchOfStuff("b")); // Output: "bird"
+console.log(switchOfStuff("c")); // Output: "cat"
+console.log(switchOfStuff("d")); // Output: "stuff"
+console.log(switchOfStuff(4));   // Output: "stuff"
+
+  </script>
+</body>
+
+</html>
